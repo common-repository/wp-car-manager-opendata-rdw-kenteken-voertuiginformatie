@@ -1,0 +1,161 @@
+@font-face {
+  font-family: kenteken;
+  src: url("../fonts/kenteken.woff2");
+}
+
+p.submitbox {
+	padding: 5px;
+    border: 1px solid #efefef;
+    border-radius: 4px;
+    margin: 0;
+	display: flow-root;
+}
+#skip { float: left; }
+#dialog-submit {
+	float: right;
+}
+#getVehicleData {
+	text-align: center;
+}
+a.amex-link { text-decoration: none; }
+a.amex-link:focus, a.amex-link:active { outline: none; box-shadow: none; }
+.amex { text-transform: uppercase; font-style: italic; font-weight: 900; font-size: 14px; }
+.amex span { color: red; }
+.amex small { font-weight: 400; font-size: 10px; }
+.footnote {
+	margin-bottom: 0;
+}
+
+
+
+
+
+#dialog-submit span:before {
+      animation: dots 1.5s linear infinite;
+      content: '';
+}   
+
+@keyframes dots {
+    0%, 20% { content: '.'; }
+    40% { content: '..'; }
+    60% { content: '...'; }
+    90%, 100% { content: ''; }
+}
+
+
+.kenteken {
+	margin: 20px 0;
+	position: relative;
+	display: inline-block;
+	background: #f3bd00;
+	padding: 2px;
+	border-radius: 3px;
+}
+.blue {
+    float: left;
+    height: 44px;
+    width: 26px;
+    text-align: center;
+    background: #003399;
+    color: #fff;
+    display: inline-block;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    font-family: arial, helvetica, sans-serif;
+    font-size: 8px;
+    text-transform: uppercase;
+    line-height: 5px;
+}
+.blue img {
+	max-width: calc(100% - 10px);
+    margin: 7px 4px 7px 6px;
+}
+.kenteken input {
+    height: 44px;
+    text-align: center;
+    font-family: "kenteken", PT Sans, arial, helvetica, sans-serif!important;
+    padding: 0 10px;
+    background: #f3bd00;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 3px;
+	border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 3px;
+    font-size: 27px!important;
+	letter-spacing: 3px;
+    font-weight: 600;
+	max-width: 200px;
+    color: #111!important;
+	outline: 0;
+	box-shadow: none;
+	border: 1px solid #111;
+	margin: 0;
+	text-transform: uppercase;
+}
+.kenteken input:focus {
+	border: 1px solid #111;
+	outline: none;
+	box-shadow: none;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 3px;
+	border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 3px;
+}
+
+.kenteken input::placeholder {
+	color: #111;
+	opacity: .1;
+}
+
+
+
+
+
+.settings_panel .wpcm-description span {
+    height: 24px;
+    border-radius: 12px;
+    padding: 0 10px;
+    background: #333;
+    display: inline-block;
+    color: #fff;
+    position: relative;
+    margin: 5px;
+	cursor: pointer;
+}
+
+/* Fixing the jQuery Dialog due to the styles that wp-car-manager includes in the stylesheet BOOHOO! */
+.ui-widget-overlay {
+	position: fixed!important; 
+}
+.ui-dialog .ui-dialog-titlebar {
+	padding: 0 16px!important;
+	margin-bottom: 3px!important;
+}
+.ui-dialog .ui-dialog-title {
+	margin: 0!important;
+	line-height: 35px!important;
+}
+.ui-dialog .ui-dialog-content {
+	padding: 16px!important;
+	border: 1px solid #aaa!important;
+	border-radius: 4px!important;
+}
+
+.ui-dialog .ui-dialog-titlebar-close {
+	width: 20px!important;
+	height: 20px!important;
+	margin: 8px!important;
+	background: none!important;
+	border: none!important;
+	top: 0!important;
+	right: 0!important;
+	padding: 0!important;
+}
+.ui-dialog-titlebar-close:before {
+	line-height: 20px!important;
+	width: inherit!important;
+	height: inherit!important;
+	margin: 0px!important;
+}
+.ui-dialog .ui-dialog-titlebar-close span { 
+	display: none!important; 
+}
